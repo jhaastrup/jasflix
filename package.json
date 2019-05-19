@@ -6,9 +6,9 @@
   "scripts": {
     "start": "node index.js",
     "test": "jest --watchAll --verbose"
-  }, 
-  "engines":{
-    "node":"10.15.3"
+  },
+  "engines": {
+    "node": "10.15.3"
   },
   "repository": {
     "type": "git",
@@ -36,7 +36,6 @@
     "moment": "^2.24.0",
     "mongoose": "^5.5.6",
     "uninstall": "0.0.0",
-    "winston": "^2.4.0",
-    "winston-mongodb": "^3.0.0"
+    "winston": "^3.2.1"
   }
 }
