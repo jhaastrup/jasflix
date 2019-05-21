@@ -10,6 +10,8 @@ require("./startup/routes")(app);
 require("./startup/validation")();
 require("./startup/prod")(app);
 
+app.get("/test", (req, res, next) => res.send("Testing"))
+
 mongoose
   .connect("mongodb+srv://jastrup:haastrup002@joke-b1rpb.mongodb.net/jasflix", {
     useNewUrlParser: true
@@ -20,5 +22,5 @@ mongoose
     console.error(err);
   });
 
-const port = process.env.PORT || 8080;
+const port = 8080; //process.env.PORT ||
 app.listen(port, () => console.log(`Listening on port ${port}...`));

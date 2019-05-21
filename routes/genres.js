@@ -8,7 +8,6 @@ const router = express.Router();
 
 //endpoint to get all generes
 router.get('/', async (req, res) =>{ 
-  throw new Error('Could not get the Genres');
     const genres = await Genre.find().sort('name');
     res.send(genres);
   
